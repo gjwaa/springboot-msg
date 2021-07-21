@@ -1,5 +1,6 @@
 package com.gjw.controller;
 
+import com.gjw.service.MsgTemplateService;
 import com.gjw.service.SendMsgService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -20,6 +21,7 @@ public class PhoneMsgApiController {
     @Autowired
     @Qualifier("sendMsgServiceImpl")
     private SendMsgService sendMsgService;
+
 
     @Autowired
     private RedisTemplate<String, String> redisTemplate;
