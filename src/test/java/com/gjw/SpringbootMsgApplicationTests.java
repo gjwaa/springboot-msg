@@ -27,9 +27,9 @@ class SpringbootMsgApplicationTests {
     }
 
     public static void main(String[] args_) throws Exception {
-        com.aliyun.dysmsapi20170525.Client client = createClient("LTAI5tLLpwV6Z2pK6LFLrQrt", "WbGyP7fdtiI0kbkfSkxKM4AOlVVKqd");
+        com.aliyun.dysmsapi20170525.Client client = createClient("", "");
         SendSmsRequest sendSmsRequest = new SendSmsRequest()
-                .setPhoneNumbers("18759805700")
+                .setPhoneNumbers("")
                 .setSignName("我爱学习")
                 .setTemplateCode("SMS_219749033")
                 .setTemplateParam("{'code':'1123'}");
